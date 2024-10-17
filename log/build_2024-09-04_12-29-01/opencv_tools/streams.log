@@ -1,0 +1,26 @@
+[3.893s] Invoking command in '/home/rasp7/opencv_tools/build/opencv_tools': PYTHONPATH=/home/rasp7/opencv_tools/build/opencv_tools/prefix_override:/home/rasp7/opencv_tools/install/opencv_tools/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/rasp7/opencv_tools/build/opencv_tools/build --no-deps install_data
+[5.365s] running develop
+[5.367s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.367s]   warnings.warn(
+[5.477s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.477s]   warnings.warn(
+[6.119s] running egg_info
+[6.119s] creating opencv_tools.egg-info
+[6.170s] writing opencv_tools.egg-info/PKG-INFO
+[6.171s] writing dependency_links to opencv_tools.egg-info/dependency_links.txt
+[6.171s] writing requirements to opencv_tools.egg-info/requires.txt
+[6.171s] writing top-level names to opencv_tools.egg-info/top_level.txt
+[6.172s] writing manifest file 'opencv_tools.egg-info/SOURCES.txt'
+[6.280s] reading manifest file 'opencv_tools.egg-info/SOURCES.txt'
+[6.281s] writing manifest file 'opencv_tools.egg-info/SOURCES.txt'
+[6.338s] running build_ext
+[6.338s] Creating /home/rasp7/opencv_tools/install/opencv_tools/lib/python3.11/site-packages/opencv-tools.egg-link (link to .)
+[6.339s] 
+[6.339s] Installed /home/rasp7/opencv_tools/build/opencv_tools
+[6.340s] running install_data
+[6.340s] creating /home/rasp7/opencv_tools/install/opencv_tools/share/ament_index
+[6.340s] creating /home/rasp7/opencv_tools/install/opencv_tools/share/ament_index/resource_index
+[6.340s] creating /home/rasp7/opencv_tools/install/opencv_tools/share/ament_index/resource_index/packages
+[6.340s] copying resource/opencv_tools -> /home/rasp7/opencv_tools/install/opencv_tools/share/ament_index/resource_index/packages
+[6.341s] copying package.xml -> /home/rasp7/opencv_tools/install/opencv_tools/share/opencv_tools
+[6.656s] Invoked command in '/home/rasp7/opencv_tools/build/opencv_tools' returned '0': PYTHONPATH=/home/rasp7/opencv_tools/build/opencv_tools/prefix_override:/home/rasp7/opencv_tools/install/opencv_tools/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/rasp7/opencv_tools/build/opencv_tools/build --no-deps install_data

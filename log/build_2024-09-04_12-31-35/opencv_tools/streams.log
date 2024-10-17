@@ -1,0 +1,20 @@
+[3.603s] Invoking command in '/home/rasp7/opencv_tools/build/opencv_tools': PYTHONPATH=/home/rasp7/opencv_tools/build/opencv_tools/prefix_override:/home/rasp7/opencv_tools/install/opencv_tools/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/rasp7/opencv_tools/build/opencv_tools/build --no-deps
+[4.761s] running develop
+[4.762s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.762s]   warnings.warn(
+[4.861s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.861s]   warnings.warn(
+[5.274s] running egg_info
+[5.417s] writing opencv_tools.egg-info/PKG-INFO
+[5.417s] writing dependency_links to opencv_tools.egg-info/dependency_links.txt
+[5.418s] writing entry points to opencv_tools.egg-info/entry_points.txt
+[5.418s] writing requirements to opencv_tools.egg-info/requires.txt
+[5.419s] writing top-level names to opencv_tools.egg-info/top_level.txt
+[5.518s] reading manifest file 'opencv_tools.egg-info/SOURCES.txt'
+[5.518s] writing manifest file 'opencv_tools.egg-info/SOURCES.txt'
+[5.575s] running build_ext
+[5.575s] Creating /home/rasp7/opencv_tools/install/opencv_tools/lib/python3.11/site-packages/opencv-tools.egg-link (link to .)
+[5.576s] Installing image_publisher script to /home/rasp7/opencv_tools/install/opencv_tools/lib/opencv_tools
+[5.577s] 
+[5.577s] Installed /home/rasp7/opencv_tools/build/opencv_tools
+[5.831s] Invoked command in '/home/rasp7/opencv_tools/build/opencv_tools' returned '0': PYTHONPATH=/home/rasp7/opencv_tools/build/opencv_tools/prefix_override:/home/rasp7/opencv_tools/install/opencv_tools/lib/python3.11/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/rasp7/opencv_tools/build/opencv_tools/build --no-deps
