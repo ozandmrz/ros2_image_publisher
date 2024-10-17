@@ -4,7 +4,7 @@
   <name>opencv_tools</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="rasp7@todo.todo">rasp7</maintainer>
+  <maintainer email="oguzhan.demiroez@fau.de">rasp7</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
