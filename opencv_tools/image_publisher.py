@@ -5,6 +5,8 @@ from cv_bridge import CvBridge
 from picamera2 import Picamera2
 import cv2
 import numpy as np
+import os
+from datetime import datetime
 
 class ImagePublisher(Node):
 
@@ -24,10 +26,20 @@ class ImagePublisher(Node):
         self.picam2.start()
 
         self.distortion_params = np.array([0.262383, -0.953104, -0.005358, 0.002628, 1.16331])
-
         self.camera_matrix = np.array([[517.306, 0, 318.643],
                                        [0, 516.469, 255.314],
                                        [0, 0, 1]])
+
+        self.declare_parameter('save_images', False)  
+        self.declare_parameter('save_folder', '/path/to/save/images')  
+        self.save_images = self.get_parameter('save_images').value
+        self.save_folder = self.get_parameter('save_folder').value
+        self.image_count = 0
+
+        if not os.path.exists(self.save_folder):
+            os.makedirs(self.save_folder)
+
+        self.timestamp_file = os.path.join(self.save_folder, 'timestamps.txt')
 
         self.timer = self.create_timer(0.033, self.timer_callback)  
 
@@ -43,6 +55,15 @@ class ImagePublisher(Node):
             img_msg = self.br.cv2_to_imgmsg(frame, "bgr8")
             self.publisher_.publish(img_msg)
             self.get_logger().info('Publishing video frame')
+
+            if self.save_images:
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+                img_path = os.path.join(self.save_folder, f'{timestamp}.png')
+                cv2.imwrite(img_path, frame)
+                self.get_logger().info(f'Saved image: {img_path}')
+                
+                with open(self.timestamp_file, 'a') as f:
+                    f.write(f'{timestamp}\n')
 
 def main(args=None):
     rclpy.init(args=args)
